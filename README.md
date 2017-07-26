@@ -12,9 +12,7 @@
 
 ## Config ##
 
-## Swagger ##
-
-官網說明：[springfox docs](https://springfox.github.io/springfox/docs/current/)
+bus refresh(限定 post)，需帳號密碼，請看設定 -> [http://localhost:8888/bus/refresh](http://localhost:8888/bus/refresh)
 
 ## Hystrix dashboard ##
 
@@ -22,3 +20,11 @@
 * 如果有使用 turbine，則輸入 http://localhost:8989/turbine.stream
 
 ## Turbine ##
+
+收集 hystrix 資料
+
+## Swagger ##
+
+官網說明：[springfox docs](https://springfox.github.io/springfox/docs/current/)
+* message-sender swagger: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+* message-receiver swagger: [http://localhost:8081/swagger-ui.html](http://localhost:8081/swagger-ui.html)
