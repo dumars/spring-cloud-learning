@@ -32,3 +32,15 @@ bus refresh(限定 post)，需帳號密碼，請看設定 -> [http://localhost:8
 官網說明：[springfox docs](https://springfox.github.io/springfox/docs/current/)
 * message-sender swagger: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 * message-receiver swagger: [http://localhost:8081/swagger-ui.html](http://localhost:8081/swagger-ui.html)
+
+## 啟動順序 ##
+
+1. zookeeper
+2. kafka
+3. eureka
+4. config
+5. turbine
+6. hystrix-dashboard
+7. zipkin
+8. message-sender
+9. message-receiver
