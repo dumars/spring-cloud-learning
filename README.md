@@ -23,6 +23,10 @@ bus refresh(限定 post)，需帳號密碼，請看設定 -> [http://localhost:8
 
 收集 hystrix 資料
 
+## Zipkin ##
+
+打開 zipkin 畫面 [http://localhost:9411](http://localhost:9411)
+
 ## Swagger ##
 
 官網說明：[springfox docs](https://springfox.github.io/springfox/docs/current/)
