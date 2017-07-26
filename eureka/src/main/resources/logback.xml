@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <jmxConfigurator/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} [%-5level] [%-50.50logger{36}] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.springframework" level="warn"/>
+    <logger name="com.github.dumars" level="debug"/>
+
+    <root level="error">
+        <appender-ref ref="console"/>
+    </root>
+</configuration>

@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+eureka:
+  instance:
+    preferIpAddress: true
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+security:
+  user:
+    name: dumars
+    password: p@ssw0rd

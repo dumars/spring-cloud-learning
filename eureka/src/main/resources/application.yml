@@ -1,0 +1,19 @@
+server:
+  port: 8761
+
+logging:
+  file: ${spring.application.name}.log
+
+eureka:
+  instance:
+    preferIpAddress: true
+    statusPageUrlPath: ${management.context-path}/info
+    healthCheckUrlPath: ${management.context-path}/health
+  client:
+    leaseRenewalIntervalInSeconds: 5
+    registerWithEureka: false
+    fetchRegistry: false
+    healthcheck:
+      enabled: true
+  server:
+    renewalPercentThreshold: 0.49

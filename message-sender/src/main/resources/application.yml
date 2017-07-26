@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: message-sender
+
+logging:
+    level:
+      org.springframework.ws: DEBUG
+
+feign:
+  hystrix:
+    enabled: true

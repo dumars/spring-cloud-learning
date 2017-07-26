@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      enabled: true
+      fail-fast: true
+      username: dumars
+      password: p@ssw0rd
+      discovery:
+        enabled: true
+        service-id: config
