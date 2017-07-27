@@ -1,0 +1,20 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+zuul:
+  ignored-services: config, zipkin, turbin, hystrix-dashboard
+  routes:
+    eureka:
+      path: /eureka/**
+      url: http://localhost:8761

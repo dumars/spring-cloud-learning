@@ -33,6 +33,11 @@ bus refresh(限定 post)，需帳號密碼，請看設定 -> [http://localhost:8
 * message-sender swagger: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 * message-receiver swagger: [http://localhost:8081/swagger-ui.html](http://localhost:8081/swagger-ui.html)
 
+## Zuul ##
+
+* message-sender swagger: 可用 http://localhost/message-sender/swagger-ui.html
+* message-receiver swagger: 可用 http://localhost/message-receiver/swagger-ui.html
+
 ## 啟動順序 ##
 
 1. zookeeper
@@ -42,5 +47,6 @@ bus refresh(限定 post)，需帳號密碼，請看設定 -> [http://localhost:8
 5. turbine
 6. hystrix-dashboard
 7. zipkin
-8. message-sender
-9. message-receiver
+8. zuul
+9. message-sender
+10. message-receiver
