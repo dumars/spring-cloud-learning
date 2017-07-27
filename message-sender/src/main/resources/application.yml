@@ -12,3 +12,19 @@ logging:
 feign:
   hystrix:
     enabled: true
+
+#security:
+#  user:
+#    name: dumars
+#    password: p@ssw0rd
+#    role: ADMIN
+
+management:
+#  port: 9000
+  security:
+    enabled: true
+  context-path: /admin
+
+endpoints:
+  health:
+    sensitive: true

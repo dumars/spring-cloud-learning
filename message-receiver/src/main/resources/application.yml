@@ -8,3 +8,9 @@ spring:
 logging:
     level:
       org.springframework.web: WARN
+
+management:
+#  port: 9000
+  security:
+    enabled: true
+  context-path: /admin

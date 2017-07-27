@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 @EnableCircuitBreaker
 @EnableHystrix
-public class WebApplication {
+public class WebApplicationConfig {
 
     @Bean
     @LoadBalanced

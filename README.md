@@ -14,9 +14,12 @@
 
 bus refresh(限定 post)，需帳號密碼，請看設定 -> [http://localhost:8888/bus/refresh](http://localhost:8888/bus/refresh)
 
+* 查看設定 [http://localhost:8888/develop/message-sender-dev.yml](http://localhost:8888/develop/message-sender-dev.yml)
+
 ## Hystrix dashboard ##
 
 打開 hystrix 畫面 [hystrix-dashboard](http://localhost:7777/hystrix)
+
 * 如果有使用 turbine，則輸入 http://localhost:8989/turbine.stream
 
 ## Turbine ##

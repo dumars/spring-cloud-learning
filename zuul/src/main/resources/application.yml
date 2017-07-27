@@ -13,8 +13,11 @@ eureka:
     prefer-ip-address: true
 
 zuul:
-  ignored-services: config, zipkin, turbin, hystrix-dashboard
+  ignored-services: '*'
+  ignored-patterns: /**/admin/**
   routes:
-    eureka:
-      path: /eureka/**
-      url: http://localhost:8761
+    message-sender: /message-sender/**
+    message-receiver: /message-receiver/**
+  ribbon:
+    eager-load:
+      enabled: true
