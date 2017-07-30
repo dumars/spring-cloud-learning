@@ -1,7 +1,5 @@
 # README #
 
----
-
 ## Zookeeper + Kafka ##
 
 安裝並啟動 zookeeper, kafka，請先啟動 zookeeper 再啟動 kafka，[教學網站](https://blog.yowko.com/2017/03/windows-os-apache-kafka.html)
@@ -53,3 +51,25 @@ bus refresh(限定 post)，需帳號密碼，請看設定 -> [http://localhost:8
 8. zuul
 9. message-sender
 10. message-receiver
+
+# Docker #
+
+## Eureka Docker ##
+
+在 eureka 資料夾下新增 Dockerfile，並修改 application.yml，請動時指定某個 profile 設定。
+使用 mvn clean package 建立 jar 檔並新增 docker image。
+
+docker image 使用 `blacklabelops/java:ubuntu.server-jre.8.121`
+
+修改 hosts
+
+```
+127.0.0.1 peer1 peer2
+```
+
+根據電腦 ip 修改 application.yml。依據以下兩個指令，啟動兩個 docker container。
+
+```
+docker run -d --rm -e ACTIVE_CONFIG=peer1 -p 8761:8761 dumars/eureka:1.0-SNAPSHOT
+docker run -d --rm -e ACTIVE_CONFIG=peer2 -p 8762:8762 dumars/eureka:1.0-SNAPSHOT
+```

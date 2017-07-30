@@ -1,0 +1,9 @@
+<project name="eureka docker image builder" basedir=".">
+
+    <target name="docker-build" description="compile the source">
+        <exec dir="${basedir}" executable="cmd" failonerror="true">
+            <arg line="/c docker build --build-arg FILE_NAME=${file.name}-${file.version}.jar -t dumars/${file.name}:${file.version} ." />
+        </exec>
+    </target>
+
+</project>
